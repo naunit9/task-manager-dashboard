@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="auth-body">
+
+  <div class="main-login-box">
+
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+
+    <div class="curve curve1"></div>
+    <div class="curve curve2"></div>
+
+    <div class="lock-shape"></div>
+    <div class="wave"></div>
+
+    <div class="login-panel">
+
+      <h5>Your Logo</h5>
+      <h1>Signup</h1>
+
+      <input type="text" id="signupName" placeholder="Full Name">
+      <small id="nameError"></small>
+
+      <input type="email" id="signupEmail" placeholder="Email">
+      <small id="signupEmailError"></small>
+
+      <input type="password" id="signupPassword" placeholder="Password">
+      <small id="signupPasswordError"></small>
+
+      <button onclick="signupUser()">Create Account</button>
+
+      <p class="bottom-text">
+        Already have an account?
+        <a href="login.html">Login</a>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

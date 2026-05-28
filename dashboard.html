@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard | Task Manager</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="dashboard-body">
+
+<div class="dashboard-container">
+
+  <!-- SIDEBAR -->
+
+  <aside class="dash-sidebar">
+
+    <h2>TaskPro</h2>
+
+    <a class="active">Dashboard</a>
+    <a>Analysis</a>
+    <a>My Tasks</a>
+    <a>Completed</a>
+    <a>Calendar</a>
+    <a>Reports</a>
+
+    <a href="login.html">Logout</a>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="dash-main">
+
+    <!-- TOPBAR -->
+
+    <div class="dash-topbar">
+
+      <input type="text" placeholder="Search task...">
+
+      <div class="profile">👤</div>
+
+    </div>
+
+    <!-- PAGE TITLE -->
+
+    <h3 class="page-title">Dashboard</h3>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-card">
+
+      <div>
+
+        <p>Welcome back</p>
+
+        <h2>John Anderson!</h2>
+
+        <div class="hero-stats">
+
+          <div>
+            <h3>12</h3>
+            <span>Total Tasks</span>
+          </div>
+
+          <div>
+            <h3>78%</h3>
+            <span>Task Completion</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero-illustration">
+
+        <div class="person"></div>
+        <div class="screen"></div>
+        <div class="lamp"></div>
+
+      </div>
+
+    </section>
+
+    <!-- DASHBOARD GRID -->
+
+    <section class="dashboard-grid">
+
+      <!-- CHART CARD -->
+
+      <div class="chart-card large">
+
+        <h3>Monthly Task Progress</h3>
+
+        <div class="bar-chart">
+
+          <span style="height:35%"></span>
+          <span style="height:70%"></span>
+          <span style="height:55%"></span>
+          <span style="height:90%"></span>
+          <span style="height:45%"></span>
+          <span style="height:38%"></span>
+          <span style="height:62%"></span>
+          <span style="height:30%"></span>
+
+        </div>
+
+      </div>
+
+      <!-- DEVICE CARD -->
+
+      <div class="chart-card circle-card">
+
+        <h3>Task Status</h3>
+
+        <div class="circle">
+
+          <h2>68%</h2>
+          <p>Tasks Done</p>
+
+        </div>
+
+      </div>
+
+      <!-- MINI CARD -->
+
+      <div class="mini-card">
+
+        <h3>42</h3>
+        <p>Pending Tasks</p>
+
+        <div class="progress-circle">78%</div>
+
+      </div>
+
+      <!-- MINI CARD -->
+
+      <div class="mini-card">
+
+        <h3>97</h3>
+        <p>Total Tasks</p>
+
+        <div class="line-design"></div>
+
+      </div>
+
+      <!-- CREATE TASK CARD -->
+
+      <div class="task-input-card">
+
+        <h3>Create New Task</h3>
+
+        <input 
+          type="text"
+          id="taskInput"
+          placeholder="Enter Task Name"
+        >
+
+        <textarea
+          id="taskDescription"
+          placeholder="Task Description"
+        ></textarea>
+
+        <select id="taskPriority">
+
+          <option>High Priority</option>
+          <option>Medium Priority</option>
+          <option>Low Priority</option>
+
+        </select>
+
+        <button id="addBtn">
+          Add Task
+        </button>
+
+      </div>
+
+      <!-- TASK LIST -->
+
+      <div class="recent-card">
+
+        <h3>Recent Tasks</h3>
+
+        <!-- TASKS WILL LOAD HERE -->
+
+        <div id="taskList"></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<!-- SCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
